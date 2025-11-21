@@ -14,7 +14,7 @@ void main()
     int n;
     printf("Enter number of Book:");
     scanf("%d",&n);
-    struct Book b[3];
+    struct Book b[n];
     for(int i=0;i<n;i++)
     {
         printf("Enter name of Book:");
@@ -25,5 +25,14 @@ void main()
 
         printf("Enter year of Publication:");
         scanf("%d",&b[i].year);
+
     } 
-} 
+       printf("your information:\n");
+       for(int i=0;i<n;i++)
+       {
+          printf("%s\n",b[i].name);
+          printf("%s\n",b[i].author);
+          printf("%d\n",b[i].year);
+        }  
+
+}
